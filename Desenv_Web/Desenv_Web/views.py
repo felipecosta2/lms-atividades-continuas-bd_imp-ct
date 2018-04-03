@@ -12,16 +12,15 @@ def contato(request):
 
 def login(request):
     if request.method == 'GET':
-        
-        print(“Acesso via GET”)
+         print('Acesso via GET')
        
 
     else:
         request.POST.get("loginUser")
         request.POST.get("senhaUser")
-        print(“Acesso via POST”)
+        print('Acesso via POST')
         print("Acesso via POST com usuário", request.POST.get("loginUser"), "e senha", request.POST.get("senhaUser"))
-    return render(request, 'login.html') 
+    return render(request, 'login.html')
     
 
 

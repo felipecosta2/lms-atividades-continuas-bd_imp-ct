@@ -17,9 +17,9 @@ from django.urls import path
 from django.contrib import admin
 from Desenv_Web.views import *
 urlpatterns = [
-path('', index),
-path('', contato),
-path('', login),
+path('index/', index),
+path('contato/', contato),
+path('login/', login),
 path('admin/', admin.site.urls),
 ]
 
