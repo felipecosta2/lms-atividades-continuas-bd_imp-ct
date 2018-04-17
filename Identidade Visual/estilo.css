@@ -1,0 +1,72 @@
+p.body{
+    background: white;
+}
+
+p.formato1{
+    text-align: center;
+    color: white;
+}
+
+p.formato2 {
+    text-align: left;
+    color: white;
+    font-family: 'Courier New';
+}
+
+.fiap-loader{
+            background:#000;
+            bottom:0;
+            left:0;
+            position:fixed;
+            right:0;
+            top:0;
+            z-index:1000
+            }
+
+.fiap-loader-box{height:270px;
+                 width:270px
+                 }
+
+.fiap-loader-text{bottom:15px;
+                  color:hsla(0,0%,100%,.5);
+                  font:12px DIN Pro Bold;
+                  left:50%;
+                  position:absolute;
+                  -webkit-transform:translateX(-50%);
+                  transform:translateX(-50%);z-index:2
+                }
+
+
+
+
+#menu ul {
+                    padding:0px;
+                    margin:0px;
+                    background-color:black;
+                    list-style:none;
+                    font-family:verdana;
+                    font-size: 20px;
+                    color:white;
+                    border-top: 2px white solid;
+                    height: 120px;
+                    text-align: right;
+                    top: 0;
+                    width: 100%;
+                    z-index: 400;
+                    left: 0;
+                    letter-spacing: 2px;
+                   
+                }
+
+
+#menu ul li { display: inline; }
+
+
+
+.menu-left {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 200px;
+}
