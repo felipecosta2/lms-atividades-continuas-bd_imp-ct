@@ -1,8 +1,37 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+@font-face{
+    font-family: 'FonteLogo';
+    src: url('../_fonts/Gaegu-Light.ttf');
+}
 
-.branco { color: white; }
+body{
+    background-color: rgba(0,0,5,.9);
+    color: rgb(225, 225, 225);
+}
 
-p.body{
-    background: black;
+div#interface {
+/* Formatação de todo o site, tamanho (condição relativa), fundo e margem (cima, direita, baixo e esquerda), margem de fundo, caixa de sombra, preenchimento do texto*/
+    width: 1285px;
+    background-image:url('sheet_imagem_files/4.jpg');
+    margin: 10px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(225,225,225,.5);
+    padding: 10px;
+}
+
+n{
+/* Formatação de negrito */
+        font-weight: 900;
+}
+
+p.formato0{
+    text-align: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    text-indent: 2cm;
+    font-size: 50px; 
 }
 
 p.formato1{
@@ -11,16 +40,85 @@ p.formato1{
     margin-left: 2cm;
     margin-right: 2cm;
     line-height: 2;
-    font-family: 'Courier New';
+    font-family: 'Poiret One', cursive;
+    text-indent: 2cm;
+    font-size: 25px;
 }
 
-p.formato2 {
+p.formato2{
     text-align: justify;
     color: white;
-    margin-left: 12cm;
-    margin-right: 12cm;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 2;
-    font-family: 'Courier New';
+    font-family: 'Poiret One', cursive;
+    text-indent: 2cm;
+    font-size: 16px;
+}
+
+header#cabecalho img#icone{
+/* Formatação de icone flutuante a direita*/
+    position: absolute;
+    left: 1150px;
+    top: 50px;
+}
+
+header#cabecalho{
+/* Formatação de todos os objetos que estão dentro do cabeçalho*/
+    border-bottom: 1px;
+    height: 100px;  
+ }
+    
+header#cabecalho h1{
+/* Formatação da configuração do título e subtitulo do cabecalho*/
+    font-family: 'Indie Flower', cursive; 
+    font-size: 30pt;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+    
+header#cabecalho h2{
+/* Formatação da configuração do título e subtitulo do cabecalho*/
+    font-family: 'Quattrocento Sans', sans-serif; 
+    font-size: 15pt; 
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 0px;
+    margin-top: 0px;
+}
+
+figure.foto-legenda{
+/* Formatação de imagens com bordas - posição, borda e efeito de borda */
+    position: relative;
+    border: 1px solid white;
+    box-shadow: 1px 1px 4px rgba(225,225,225,.5);
+}
+    
+figure.foto-legenda img{
+/* Formatação de imagens em seu tamanho */
+    width: 100%;
+    height: 100%;
+}
+    
+figure.foto-legenda figcaption{
+/* Formatação da imagem e seu comentário*/
+    opacity: 0;
+    position: absolute;
+    top : 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+    
+figure.foto-legenda:hover figcaption{
+/* Formatação de tempo de comentário na foto*/
+    opacity: 1;
 }
 
 .fiap-loader{
@@ -46,70 +144,114 @@ p.formato2 {
                   transform:translateX(-50%);z-index:2
                 }
 
-
-
-
-#menu ul {
-                    padding:0px;
-                    margin:0px;
-                    background-color:black;
-                    list-style:none;
-                    font-family:verdana;
-                    font-size: 20px;
-                    color:white;
-                    border-top: 2px white solid;
-                    height: 120px;
-                    text-align: right;
-                    top: 0;
-                    width: 100%;
-                    z-index: 400;
-                    left: 0;
-                    letter-spacing: 2px;
-                   
-                }
-
-
-#menu ul li { display: inline; }
-
-
-
-.menu-left {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 200px;
+nav#menu {
+/* Formatação do Menu - flutuação do menu e posição correta*/
+display: block;
 }
+                
+nav#menu ul {
+/* Formatação do Menu - sumir com as marcações e transformar todo o texto em maiúsculo*/
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+}
+                
+nav#menu li{
+/* Formatação do Menu - em linha, cor de fundo, controle do espaçamento dentro do objeto, controle do espaço fora do objeto*/
+    display: inline-block;
+    background-color:#dddd;
+    padding: 5px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;
+}
+                
+nav#menu li:hover {
+/* Formatação do Menu - efeito quando mover o mouse por cima do menu*/              background-color: #606060;
+}
+                
+nav#menu h1{
+/* Formatação do Menu - esconder MENU PRINCIPAL do site*/
+    display: none;
+}
+                
+nav#menu a {
+/* Formatação do Menu - formatação dos links*/
+    color: black;
+    text-decoration: none;
+}
+                
+nav#menu a:hover{
+/*mudança de cor quando o mouse estiver no botão*/
+    color: white;
+}
+
+section#corpo{
+    display: block;
+    width: 825px;
+    float: left;
+    border-right: 1px #606060 solid;
+    padding-right: 15px;
+}
+
+table#tabelaspec{
+/* Formatação da tabela - borda externa*/
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+                
+table#tabelaspec td{
+/* Formatação da tabela - borda interna*/
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: left;
+    vertical-align: middle;
+}
+
 .main{
-	background-color: #383737;
     width: 80%;
     height: 100%;
-	margin: auto;
-	padding: 210px 0 ;
+	margin: auto auto auto auto;
+	padding: 210px 0;
 	padding-top: 10px;
-	overflow: auto
+    overflow: auto;
+    font-family: 'Quattrocento Sans', sans-serif; 
+    font-size: 15pt; 
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    padding: 0px;
+    margin-top: 0px;
 	}
 
-    .form{
-		padding: 12px 20px;
-	}
-
-
+.form{
+	padding: 12px 20px;
+}
 
 .form input[type=password],input[type=text],input[type=email]{
 	width: 40%;
 	margin: auto;
 	text-align:center;
 	padding: 10px 20px;
-	margin: 8 px 10 px;
+	margin: 8px 10px;
 	border: 1px solid #555;
-	
-	}
+}
 
-.rodape{
+footer#rodape{
+    clear: both;
+    border-top: 1px #606060 solid;
+}
+    
+footer#rodape p{
+    font-family: 'Quattrocento Sans', sans-serif; 
+    font-size: 10pt;
     text-align: center;
-    width: 80%;
-	height: 60px;
-	margin: auto;
-	color: white;
-	}
+    text-decoration: none;
+    color: white;
+}
