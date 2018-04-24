@@ -8,83 +8,73 @@
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
 
-<body style="background:black">
+<body>
 
+	<div id='interface'>
+		<header id='cabecalho'>
+			<hgrupo>
+				<h1>FACULDADE IMPACT@-on</h1>
+				<h2>Sua Faculdade 100% online</h2>
+			</hgrupo>
+	
+			<img id='icone' src="sheet_imagem_files/sbscTrial_BA1TRIAL.png" height="75px" width="75px">
 
-	<nav id="menu">
-
-		<ul>
+		<nav id='menu'>
+			<h1>Menu Principal</h1>
+			<ul>
 			<center>
-				<li>
-					<a href="index.html" style="color:white">Home</a>
-				</li>
-				<li>
-					<a href="alunos.html" style="color:white">Alunos</a>
-				</li>
-				<li>
-					<a href="atividades.html" style="color:white">Atividades</a>
-				</li>
-				<li>
-					<a href="detalhes_da_disciplina.html" style="color:white">Detalhes da Disciplina</a>
-				</li>
-				<li>
-					<a href="nova_disciplina.html" style="color:white">Nova Disciplina</a>
-				</li>
-				<li>
-						<a href="login.html" style="color:white">Login</a>
-					</li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="alunos.html">Alunos</a></li>
+				<li><a href="atividades.html">Atividades</a></li>
+				<li><a href="detalhes_da_disciplina.html">Detalhes da Disciplina</a></li>
+				<li><a href="nova_disciplina.html">Nova Disciplina</a></li>
+				<li><a href="login.html">Login</a></li>
 			</center>
-		</ul>
-		<center>
-			<div class="menu-left">
-				<img src="ibm-watson-logo.gif" alt="Smiley face" height="70" width="95">
-			</div>
-
-	</nav>
-	</center>
+			</ul>
+		</header>
+		
 	<center>
 	<div class="main">
-			<h1><p class="branco">ALUNO</p></h1>
+			<h1><p class='formato0'>ALUNO</p></h1>
 			<div class="form">
 			<form name="form1" action="#" method="POST">
 			
-				<label for="login"><p class="branco">Login</p></label>
+				<label for="login"><p class="formato2">Login</p></label>
 				<input type="text" placeholder="Digite o login" required><br/>
 				
-				<label for="nomecompleto"><p class="branco">Nome Completo</p></label>:
+				<label for="nomecompleto"><p class="formato2">Nome Completo</p></label>
 				<input type="text" name="nomecompleto" placeholder="Digite nome completo" required><br/>
 				
-				<label for="email"><p class="branco">E-mail</p> </label>
+				<label for="email"><p class="formato2">E-mail</p> </label>
 				<input type="email" value="" placeholder="email@email.com" required><br/>
 				
-				<label for="Celular"><p class="branco">Celular</p></label>
+				<label for="Celular"><p class="formato2">Celular</p></label>
 				<input type="text" id="cel" onKeyPress="Mascaracel(form1.cel);"placeholder="Digite seu celular" maxlength="14"required><br/>
 				
-				<label for="data"><p class="branco">Data de Nascimento</p></label>
+				<label for="data"><p class="formato2">Data de Nascimento</p></label>
 				<input type="text" name="data" id="data" onKeyPress="MascaraData(form1.data);"
-				 onBlur= "ValidaIdade(form1.data);"placeholder="Digite a data de nascimento"  maxlength="10" required><br/>
+				 onBlur= "ValidaIdade(form1.data);"placeholder="Digite a data de nascimento (exemplo **/**/****)"  maxlength="10" required><br/>
 			
-				<label for="cpf"><p class="branco">CPF</p></label><br/>
+				<label for="cpf"><p class="formato2">CPF</p></label><br/>
 				<input type="text" name="cpf" onBlur="ValidarCPF(form1.cpf);" 
 				onKeyPress="MascaraCPF(form1.cpf);" placeholder="Digite o CPF" maxlength="14" required ><br/>
 				
-				<label for="senha"><p class="branco">Senha</p></label><br/>
+				<label for="senha"><p class="formato2">Senha</p></label><br/>
 				<input type="password" name="senha" placeholder="Digite sua senha" required="required" ><br/>
 				
-				<label for="rep_senha"><p class="branco">Repetir Senha</p></label><br/>
+				<label for="rep_senha"><p class="formato2">Repetir Senha</p></label><br/>
 				<input type="password" name="rep_senha" onBlur ="ValidarSenha(form1.rep_senha);"placeholder="Digite a senha novamente"  ><br/>
 				<br>
 				<p></p>
-				
 				<input type="submit" onclick="return vb()">
 			</form>
 		</div>
 	</center>
-	<div id="rod" class="rodape">
-		
+
+	<footer id="rodape">
+		<p>Endereço: Avenida Rudge, 315 - Barra Funda - São Paulo / SP Contato: Tel: 11 3254-8300<br><a href='http://impacta.edu.br' target='_blank'>Impacta</a></p>
+	</footer>
 	
-			<h2>Endereço: Avenida Rudge, 315 - Barra Funda - São Paulo / SP Contato: Tel: 11 3254-8300 </h2>
-			
-		</div>
-	</body>
-    </html>
+</body>
+
+</html>
