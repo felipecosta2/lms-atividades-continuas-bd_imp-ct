@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet');
+@font-face{
+    font-family: 'FonteLogo';
+    src: url('../_fonts/Gaegu-Light.ttf');
+}
+body{
+/*Formatação de cor de fundo e de letra (condição absoluta)*/
+    background-color: rgba(0,0,5,.9);
+    color: rgb(225, 225, 225)
+}
+
+div#interface {
+/* Formatação de todo o site, tamanho (condição relativa), fundo e margem (cima, direita, baixo e esquerda), margem de fundo, caixa de sombra, preenchimento do texto*/
+    width: 1285px;
+    background-image:url('../_sheet_imagem_files/3.jpg');
+    margin: -50px auto 10px auto;
+    box-shadow: 0px 0px 10px rgba(225,225,225,.9);
+    padding: 10px;
+}
+
+p{
+/*Formatação de estilo de texto */
+    text-align: justify;
+    text-indent: 50px;
+}
+
+n
+/* Formatação de negrito */
+{
+    font-weight: 900;
+}
+
+header#cabecalho img#icone{
+/* Formatação de icone flutuante a direita*/
+    position: absolute;
+    left: -50px;
+    top: -50px;
+}
+
+header#cabecalho{
+/* Formatação de todos os objetos que estão dentro do cabeçalho*/
+    border-bottom: 1px #606060 solid;
+}
+
+header#cabecalho h1{
+/* Formatação da configuração do título e subtitulo do cabecalho*/
+    font-family: 'FonteLogo', sans-serif; 
+    font-size: 30pt;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(255,255,255,.9);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+header#cabecalho h2{
+    /* Formatação da configuração do título e subtitulo do cabecalho*/
+        font-family: 'Gugi', cursive; 
+        font-size: 15pt; 
+        color: white;
+        text-shadow: 1px 1px 1px rgba(255,255,255,.9);
+        padding: 0px;
+        margin-top: 0px;
+}
+
+figure.foto-legenda{
+/* Formatação de imagens com bordas - posição, borda e efeito de borda */
+    position: relative;
+    border: -3px solid black;
+    box-shadow: -3px -3px 50px rgba(225,225,225,.5);
+}
+
+figure.foto-legenda img{
+/* Formatação de imagens em seu tamanho */
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{
+/* Formatação da imagem e seu comentário*/
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption{
+/* Formatação de tempo de comentário na foto*/
+    opacity: 1s;
+}
+
+nav#menu1 {
+    /* Formatação do Menu - flutuação do menu e posição correta*/
+    display: block;
+}
+
+nav#menu1 ul {
+/* Formatação do Menu - sumir com as marcações e transformar todo o texto em maiúsculo*/
+    list-style: none;
+    font-family: 'FonteLogo', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+    }
+
+nav#menu1 li{
+/* Formatação do Menu - em linha, cor de fundo, controle do espaçamento dentro do objeto, controle do espaço fora do objeto*/
+    display: block;
+    list-style-type: none;
+    background-color:#dddd;
+    padding: 1px;
+    margin-left: 1px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;
+    width: 100px;
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: -10px;
+    margin-right: auto;
+}
+
+nav#menu1 li:hover {
+/* Formatação do Menu - efeito quando mover o mouse por cima do menu*/
+    background-color: #606060;
+    display: block; 
+}
+
+nav#menu1 h1{
+/* Formatação do Menu - esconder MENU PRINCIPAL do site*/
+    display: none;
+}
+
+nav#menu1 a {
+/* Formatação do Menu - formatação dos links*/
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu1 a:hover{
+/*mudança de cor quando o mouse estiver no botão*/
+    color: white;
+}
+
+nav#login{
+/* Formatação do login*/
+    text-decoration: none;
+}
+
+nav#login a{
+    /* Formatação do login*/
+        text-decoration: none;
+    }
+
+nav#menu {
+    /* Formatação do Menu - flutuação do menu e posição correta*/
+    display: block;
+}
+
+nav#menu ul {
+/* Formatação do Menu - sumir com as marcações e transformar todo o texto em maiúsculo*/
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+    }
+
+nav#menu li{
+/* Formatação do Menu - em linha, cor de fundo, controle do espaçamento dentro do objeto, controle do espaço fora do objeto*/
+    display: inline-block;
+    background-color:#dddd;
+    padding: 5px;
+    margin: 2px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+/* Formatação do Menu - efeito quando mover o mouse por cima do menu*/
+    background-color: #606060;
+}
+
+nav#menu h1{
+/* Formatação do Menu - esconder MENU PRINCIPAL do site*/
+    display: none;
+}
+
+nav#menu a {
+/* Formatação do Menu - formatação dos links*/
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+/*mudança de cor quando o mouse estiver no botão*/
+    color: white;
+}
+
+section#corpo{
+    display: block;
+    width: 825px;
+    float: left;
+    border-right: 1px #606060 solid;
+    padding-right: 15px;
+}
+table#tabelaspec{
+/* Formatação da tabela - borda externa*/
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td{
+    /* Formatação da tabela - borda interna*/
+        border: 1px solid #606060;
+        padding: 10px;
+        text-align: left;
+        vertical-align: middle;
+}
+
+aside#lateral{
+    display: block;
+    width: 425px;
+    float: right;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px #606060 solid;
+}
+
+footer#rodape p{
+    text-align: center;
+    text-decoration: none;
+}
