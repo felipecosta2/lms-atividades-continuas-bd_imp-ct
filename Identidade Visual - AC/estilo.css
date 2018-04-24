@@ -1,0 +1,115 @@
+
+.branco { color: white; }
+
+p.body{
+    background: black;
+}
+
+p.formato1{
+    text-align: justify;
+    color: white;
+    margin-left: 2cm;
+    margin-right: 2cm;
+    line-height: 2;
+    font-family: 'Courier New';
+}
+
+p.formato2 {
+    text-align: justify;
+    color: white;
+    margin-left: 12cm;
+    margin-right: 12cm;
+    line-height: 2;
+    font-family: 'Courier New';
+}
+
+.fiap-loader{
+            background:#000;
+            bottom:0;
+            left:0;
+            position:fixed;
+            right:0;
+            top:0;
+            z-index:1000
+            }
+
+.fiap-loader-box{height:270px;
+                 width:270px
+                 }
+
+.fiap-loader-text{bottom:15px;
+                  color:hsla(0,0%,100%,.5);
+                  font:12px DIN Pro Bold;
+                  left:50%;
+                  position:absolute;
+                  -webkit-transform:translateX(-50%);
+                  transform:translateX(-50%);z-index:2
+                }
+
+
+
+
+#menu ul {
+                    padding:0px;
+                    margin:0px;
+                    background-color:black;
+                    list-style:none;
+                    font-family:verdana;
+                    font-size: 20px;
+                    color:white;
+                    border-top: 2px white solid;
+                    height: 120px;
+                    text-align: right;
+                    top: 0;
+                    width: 100%;
+                    z-index: 400;
+                    left: 0;
+                    letter-spacing: 2px;
+                   
+                }
+
+
+#menu ul li { display: inline; }
+
+
+
+.menu-left {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 200px;
+}
+.main{
+	background-color: #383737;
+    width: 80%;
+    height: 100%;
+	margin: auto;
+	padding: 210px 0 ;
+	padding-top: 10px;
+	overflow: auto
+	}
+
+    .form{
+		padding: 12px 20px;
+	}
+
+
+
+.form input[type=password],input[type=text],input[type=email]{
+	width: 40%;
+	margin: auto;
+	text-align:center;
+	padding: 10px 20px;
+	margin: 8 px 10 px;
+	border: 1px solid #555;
+	
+	}
+
+.rodape{
+    text-align: center;
+    width: 80%;
+	height: 60px;
+	margin: auto;
+	color: white;
+	}

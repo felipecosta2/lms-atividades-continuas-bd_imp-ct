@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="Sheet_imagem.png" />
+	<title>Faculdade Impact@On</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+<body style="background:black">
+
+
+	<nav id="menu">
+
+		<ul>
+			<center>
+				<li>
+					<a href="index.html" style="color:white">Home</a>
+				</li>
+				<li>
+					<a href="alunos.html" style="color:white">Alunos</a>
+				</li>
+				<li>
+					<a href="atividades.html" style="color:white">Atividades</a>
+				</li>
+				<li>
+					<a href="detalhes_da_isciplina.html" style="color:white">Detalhes da Disciplina</a>
+				</li>
+				<li>
+					<a href="nova_disciplina.html" style="color:white">Nova Disciplina</a>
+				</li>
+				<li>
+						<a href="login.html" style="color:white">Login</a>
+					</li>
+			</center>
+		</ul>
+		<center>
+			<div class="menu-left">
+				<img src="ibm-watson-logo.gif" alt="Smiley face" height="70" width="95">
+			</div>
+
+	</nav>
+	</center>
+	<center>
+	<div class="main">
+			<h1><p class="branco">ALUNO</p></h1>
+			<div class="form">
+			<form name="form1" action="#" method="POST">
+			
+				<label for="login"><p class="branco">Login</p></label>
+				<input type="text" placeholder="Digite o login" required><br/>
+				
+				<label for="nomecompleto"><p class="branco">Nome Completo</p></label>:
+				<input type="text" name="nomecompleto" placeholder="Digite nome completo" required><br/>
+				
+				<label for="email"><p class="branco">E-mail</p> </label>
+				<input type="email" value="" placeholder="email@email.com" required><br/>
+				
+				<label for="Celular"><p class="branco">Celular</p></label>
+				<input type="text" id="cel" onKeyPress="Mascaracel(form1.cel);"placeholder="Digite seu celular" maxlength="14"required><br/>
+				
+				<label for="data"><p class="branco">Data de Nascimento</p></label>
+				<input type="text" name="data" id="data" onKeyPress="MascaraData(form1.data);"
+				 onBlur= "ValidaIdade(form1.data);"placeholder="Digite a data de nascimento"  maxlength="10" required><br/>
+			
+				<label for="cpf"><p class="branco">CPF</p></label><br/>
+				<input type="text" name="cpf" onBlur="ValidarCPF(form1.cpf);" 
+				onKeyPress="MascaraCPF(form1.cpf);" placeholder="Digite o CPF" maxlength="14" required ><br/>
+				
+				<label for="senha"><p class="branco">Senha</p></label><br/>
+				<input type="password" name="senha" placeholder="Digite sua senha" required="required" ><br/>
+				
+				<label for="rep_senha"><p class="branco">Repetir Senha</p></label><br/>
+				<input type="password" name="rep_senha" onBlur ="ValidarSenha(form1.rep_senha);"placeholder="Digite a senha novamente"  ><br/>
+				<br>
+				<p></p>
+				
+				<input type="submit" onclick="return vb()">
+			</form>
+		</div>
+	</center>
+	<div id="rod" class="rodape">
+		
+	
+			<h2>Endereço: Avenida Rudge, 315 - Barra Funda - São Paulo / SP Contato: Tel: 11 3254-8300 </h2>
+			
+		</div>
+	</body>
+    </html>
