@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Khula');
+
+form{
+    color: white;
+    width: 500px;
+    margin: auto; 
+    font-family: 'Khula', 'sans-serif';
+    text-align: center;
+    font-size: 13px;
+    font-weight: normal;
+    font-size: 13pt;  
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7 px;
+}
+
+input, textarea{
+    font-family: 'Khula', 'sans-serif';
+    font-weight: normal;
+    text-align: center;
+    font-size: 14pt;
+    background-color: rgba(255, 255, 255, .8);
+}
+
+input:hover, textarea:hover{
+    /*altera a cor ao passar com o mouse sobre*/
+    background-color: #dddddd;
+}
+
+legend{
+    color: white;
+    font-weight: bold;
+    font-size: 13pt;
+    font-family: 'Khula', 'sans-serif';
+}
+
+fieldset{
+    border-color: #cecece;
+    margin: 20px;
+}
+
+fieldset#sexo{
+    width: 150px;
+    text-align: center;
+}
+
+fieldset#usuario{
+    background: url("../_icone/icone-contato.png") no-repeat 95% 95%;
+}
+
+fieldset#endereco{
+    background: url("../_icone/icone-endereco.png") no-repeat 95% 95%;
+}
+
+fieldset#mensagem{
+    background: url("../_icone/icone-mensagem.png") no-repeat 95% 95%;
+    
+}
+fieldset#pedido{
+    background: url("../_icone/icone-pagamento.png") no-repeat 95% 95%;
+}

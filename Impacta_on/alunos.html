@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="shortcut icon" href="../Impacta_on/_icone/icone.gif" />
+	<title>Faculdade Impact@On</title>
+	<link rel="stylesheet" type="text/css" href="../Impacta_on/_css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../Impacta_on/_css/form.css">
+</head>
+
+<body>
+
+	<div id='interface'>
+		<header id='cabecalho'>
+			<hgrupo>
+				<h1>FACULDADE IMPACT@-on</h1>
+				<h2>Sua Faculdade 100% online</h2>
+			</hgrupo>
+	
+			<img id='icone1' src="../Impacta_on/_icone/icone.gif" height="150px" width="150px">
+			<!--<img id='icone2' src="../Impacta_on/_icone/2.gif" height="55px" width="55px">-->
+
+		<nav id='menu'>
+			<h1>Menu Principal</h1>
+			<ul>
+				<center>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="alunos.html">Alunos</a></li>
+					<li><a href="atividades.html">Atividades</a></li>
+					<li><a href="detalhes_da_disciplina.html">Detalhes da Disciplina</a></li>
+					<li><a href="nova_disciplina.html">Nova Disciplina</a></li>
+					<li><a href="contato.html">Contato</a></li>
+					<li><a href="login.html">Login</a></li>
+				</center>
+			</ul>
+		</header>
+		
+	<center>
+	<div class="main">
+			<div class="form">
+			<!--<form name="form1" action="#" method="post">-->
+			
+				<fieldset id='usuario'>
+					<legend>Cadastro de Novo Aluno</legend>
+						
+					<p><label for='cLogin'>Login<br></label><input type="text" name="tLogin" id="cLogin" size="30" maxlength="30" placeholder="Login" required/></p>
+				
+					<p><label for='cNome'>Nome Completo<br></label><input type="text" name="tNome" id="cNome" size="30" maxlength="30" placeholder="Nome Completo" required/></p>
+				
+					<p><label for='cMail'>E-mail<br></label><input type='email'name="tMail" id="cMail" size="30" maxlength="40" placeholder="E-mail"required/></p>
+				
+					<p><label for="cTel">Telefone<br></label><input type="number" name="tTel" id="cTel" size="(11)11111.1111" maxlength="(99)99999.9999" placeholder="Telefone"required/></p>
+				
+					<p><label for="cNasc">Data de Nascimento<br></label><input type="date" name="tNasc" id="cNasc" placeholder="Data de Nascimento" required/></p>
+
+					<p><label for="ccpf">CPF<br></label><input type="text" name="tcpf" id="ccpf" size="14" maxlength="14" placeholder="Digite o CPF/MF"required/></p>
+
+					<p><label for='cSenha'>Senha<br></label><input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 Dígitos"required/></p>
+
+					<p><label for='cRep'>Repetir Senha<br></label><input type="password" name="tRep" id="cRep" size="8" maxlength="8" placeholder="Digite Novamente"required/></p>
+					
+					<center><input type="submit" onclick="return vb()"></center>
+			</form>
+		</div>
+	</center>
+
+	<footer id="rodape">
+		<p>Endereço: Avenida Rudge, 315 - Barra Funda - São Paulo / SP Contato: Tel: 11 3254-8300<br><a href='http://impacta.edu.br' target='_blank'>Impacta</a></p>
+	</footer>
+
+</body>
+
+</html>
